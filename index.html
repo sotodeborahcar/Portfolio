@@ -20,21 +20,37 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
+    
   </head>
   <body>
-    <!-- comienzo de barra de navegacion -->
-    <nav>
-      <ul class="links-navegacion">
-        <li>HOLA</li>
-        <li>CONOCIMIENTOS</li>
-        <li>PROYECTOS</li>
-        <li class="nav-item">
-          <a href="http://#contacto" class="nav-link"> CONTACTO</a>
-        </li>
-      </ul>
-    </nav>
+    
+    <!-- Header -->
+    <header>
+      <div class="columna menu-contenedor">
+        <!-- comienzo de barra de navegacion -->
+        <nav>
+          <ul class="links-navegacion">
+            <li><a href="#presentacion">HOLA</a></li>
+            <li><a href="#conocimientos">CONOCIMIENTOS</a></li>
+            <li><a href="#proyecto">PROYECTOS</a></li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/deborah-carolina-soto-140987/"
+                target="_blanck"
+                class="nav-link selected"
+              >
+                CONTACTO</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="menu-hamburguesa">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
     <!-- seccion de presentacion -->
-    <section class="section presentacion">
+    <section class="section presentacion" id="presentacion">
       <div class="columna contenedor-presentacion">
         <div class="informacion">
           <p class="saludo">¡Hola! Soy</p>
@@ -44,14 +60,17 @@
             excelelente conductora automovilista, fan de las matematicas y las
             series.
           </p>
-          <a href="#projectos" class="button">LO QUE HAGO</a>
+          <a href="#proyecto" class="button">LO QUE HAGO</a>
         </div>
-        <img src="./undraw_dev_focus_b9xo (1).png" alt="" class="imagen" />
-        <!-- <img src="./766.jpg" alt="niña programadora" class="imagen" /> -->
+        <img
+          src="imagenes/undraw_dev_focus_b9xo (1).png"
+          alt=""
+          class="imagen"
+        />
       </div>
     </section>
     <!-- seccion conocimientos -->
-    <section class="section conocimientos">
+    <section class="section conocimientos" id="conocimientos">
       <div class="columna contenido">
         <h2>Mis conocimientos</h2>
         <p class="parrafo-conocimientos">
@@ -61,38 +80,38 @@
         <div class="contenedor-box">
           <div class="box">
             <i class="devicon-html5-plain colored"></i>
-            <!-- <img class="img" src="6.png" alt="" /> -->
+
             <p>HTML 5</p>
           </div>
           <div class="box">
             <i class="devicon-css3-plain colored"></i>
-            <!-- <img class="img" src="5.png" alt="" /> -->
+
             <p>CSS 3</p>
           </div>
           <div class="box">
             <i class="devicon-sass-original colored"></i>
-            <!-- <img class="img" src="4.png" alt="" /> -->
+
             <p>Sass</p>
           </div>
           <div class="box">
             <i class="devicon-javascript-plain colored"></i>
-            <!-- <img class="img" src="3.png" alt="" /> -->
+
             <p>JavaScript</p>
           </div>
           <div class="box">
             <i class="devicon-react-original colored"></i>
-            <!-- <img class="img" src="2.png" alt="" /> -->
+
             <p>React</p>
           </div>
           <div class="box">
             <i class="devicon-git-plain colored"></i>
-            <!-- <img class="img" src="1.png" alt="" /> -->
+
             <p>GIT</p>
           </div>
         </div>
       </div>
     </section>
-    <!-- seccion semeone -->
+    <!-- seccion cita -->
     <section class="section cita">
       <div class="contenido columna">
         <i class="fas fa-quote-right quote-icon"></i>
@@ -126,7 +145,7 @@
           >
             <figure>
               <img
-                src="./Captura de pantalla 2020-08-02 a la(s) 23.23.12.png"
+                src="imagenes/Captura de pantalla 2020-08-02 a la(s) 23.23.12.png"
                 alt=""
                 class="img-proyecto"
               />
@@ -141,7 +160,7 @@
           >
             <figure>
               <img
-                src="./undraw_shopping_app_flsj.png"
+                src="imagenes/undraw_shopping_app_flsj.png"
                 alt=""
                 class="img-proyecto"
               />
@@ -156,7 +175,7 @@
           >
             <figure>
               <img
-                src="./undraw_old_day_6x25.png"
+                src="imagenes/undraw_old_day_6x25.png"
                 alt=""
                 class="img-proyecto"
               />
@@ -170,7 +189,11 @@
             class="proyecto"
           >
             <figure>
-              <img src="./undraw_wallet_aym5.png" alt="" class="img-proyecto" />
+              <img
+                src="imagenes/undraw_wallet_aym5.png"
+                alt=""
+                class="img-proyecto"
+              />
               <p class="nombre-proyecto">Controlador de gastos</p>
             </figure>
           </a>
@@ -181,7 +204,11 @@
             class="proyecto"
           >
             <figure>
-              <img src="./undraw_events_2p66.png" alt="" class="img-proyecto" />
+              <img
+                src="imagenes/undraw_events_2p66.png"
+                alt=""
+                class="img-proyecto"
+              />
               <p class="nombre-proyecto">Administrador de reuniones</p>
             </figure>
           </a>
@@ -193,7 +220,7 @@
           >
             <figure>
               <img
-                src="./undraw_to_do_list_a49b.png"
+                src="imagenes/undraw_to_do_list_a49b.png"
                 alt=""
                 class="img-proyecto"
               />
@@ -208,7 +235,7 @@
           >
             <figure>
               <img
-                src="./undraw_movie_night_fldd.png"
+                src="imagenes/undraw_movie_night_fldd.png"
                 alt=""
                 class="img-proyecto"
               />
@@ -223,31 +250,48 @@
       <!-- footer menu -->
       <nav class="footer-nav">
         <ul class="footer-menu">
-          <li class="footer-menu-item">HOLA</li>
-          <li class="footer-menu-item">CONOCIMIENTOS</li>
-          <li class="footer-menu-item">PROYECTOS</li>
-          <li class="footer-menu-item">CONTACTO</li>
+          <li class="footer-menu-item"><a href="#presentacion">HOLA</a></li>
+          <li class="footer-menu-item"><a href="#conocimientos">CONOCIMIENTOS</a></li>
+          <li class="footer-menu-item"><a href="#proyecto">PROYECTOS</a></li>
+          <li class="footer-menu-item"><a href="https://www.linkedin.com/in/deborah-carolina-soto-140987/"
+            target="_blanck"">CONTACTO</a></li>
         </ul>
       </nav>
       <!-- footer iconos redes sociales -->
       <ul class="footer-social">
         <li class="footer-social-item">
-          <a href="#" class="footer-social-link twitter-link">
+          <a
+            href="https://twitter.com/Debito_Car"
+            class="footer-social-link twitter-link"
+            target="_blanck"
+          >
             <i class="fab fa-twitter footer-social-icon"> </i
           ></a>
         </li>
         <li class="footer-social-item">
-          <a href="#" class="footer-social-link github-link">
+          <a
+            href="https://github.com/sotodeborahcar"
+            class="footer-social-link github-link"
+            target="_blanck"
+          >
             <i class="fab fa-github-alt footer-social-icon"></i
           ></a>
         </li>
         <li class="footer-social-item">
-          <a href="#" class="footer-social-link linkedin-link">
+          <a
+            href="https://www.linkedin.com/in/deborah-carolina-soto-140987/"
+            class="footer-social-link linkedin-link"
+            target="_blanck"
+          >
             <i class="fab fa-linkedin-in footer-social-icon"></i
           ></a>
         </li>
         <li class="footer-social-item">
-          <a href="#" class="footer-social-link email-link">
+          <a
+            href="https://outlook.live.com/mail/0/inbox/id/AQQkADAwATZiZmYAZC05NzY3LTk2YTEtMDACLTAwCgAQAMLXnxNeVkpAnXEGo8jZtUI%3D"
+            class="footer-social-link email-link"
+            target="_blanck"
+          >
             <i class="fas fa-envelope footer-social-icon"></i
           ></a>
         </li>

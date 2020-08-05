@@ -2,10 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-chinese-wind-and-mountain-water-food-health-psd-layered-main-map-image_166068.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 html,
 body {
@@ -15,14 +19,25 @@ body {
 * {
   box-sizing: border-box;
 }
-body {
+header {
+  background-color: rgba(199, 177, 184, 0.475);
+  padding: 25px 0;
+  position: relative;
+  box-shadow: 0 10px 8px 0 rgba(134, 134, 134, 0.25);
+}
+div {
   display: block;
-  /* font-size: 1em; */
+}
+.columna {
+  width: 100%;
+  max-width: 1100px;
 }
 
 nav {
-  padding: 25px 0;
-  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  /* padding: 25px 0;
+  position: relative; */
 }
 
 .links-navegacion {
@@ -30,7 +45,8 @@ nav {
   margin: 0;
   list-style-type: none;
   justify-content: flex-end;
-  box-shadow: 0 10px 8px 0 rgba(134, 134, 134, 0.25);
+  /* align-items: center; forma para acomodar el boton*/
+  /* box-shadow: 0 10px 8px 0 rgba(134, 134, 134, 0.25); */
   /* box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25); */
 }
 ul {
@@ -53,11 +69,21 @@ a {
 }
 .nav-link {
   line-height: 2;
+  /* background-color: #ff638a;
+  color: white;
+  padding: 10px 35px;
+  border-radius: 100px;
+  margin-top: -8px; */
+}
+.selected {
   background-color: #ff638a;
   color: white;
   padding: 10px 35px;
   border-radius: 100px;
   margin-top: -8px;
+}
+.menu-icono {
+  display: none;
 }
 /* seccion de navegacion */
 .section {
@@ -66,13 +92,21 @@ a {
   padding: 100px 40px 100px;
   text-align: center;
 }
+.menu-hamburguesa {
+  display: none;
+}
+button {
+  border: 0;
+  background-color: transparent;
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  color: #2e2e31;
+  cursor: pointer;
+}
 .presentacion {
   height: 90%;
 }
-.columna {
-  width: 100%;
-  max-width: 1100px;
-}
+
 .contenedor-presentacion {
   display: flex;
   flex-direction: row;
@@ -103,17 +137,19 @@ p {
   font-weight: 800;
 }
 .nombre {
-  margin-top: 0;
+  font-family: "Lobster", cursive;
+  margin-top: 5px;
   margin-bottom: 5px;
   color: #ff638a;
 }
 .descripcion {
-  color: #8a8fa3;
-  font-size: 20px;
+  color: #5d6271;
+  font-size: 25px;
   margin-bottom: 40px;
   margin-left: 0px;
 }
 .imagen {
+  border-radius: 10%;
   max-width: 700px;
   width: 500px;
   height: 450px;
@@ -216,12 +252,13 @@ h2 {
 .cita {
   background-color: #ff638a;
   color: white;
+  font-family: serif;
+  font-style: italic;
 }
 .quote-icon {
-  font-size: 100px;
+  font-size: 80px;
   margin-bottom: 20px;
   font-weight: 900;
-  font-family: "Krona One", sans-serif;
 }
 .cita-autor {
   display: block;
@@ -229,9 +266,8 @@ h2 {
   margin-block-end: 1em;
   margin-inline-start: 40px;
   margin-inline-end: 40px;
-  font-size: 1.2rem;
   max-width: 800px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
 }
 h3 {
   font-size: 35px;
@@ -251,14 +287,7 @@ h3 {
   color: white;
   border-radius: 100px;
 }
-button {
-  border: 0;
-  background-color: transparent;
-  font-size: 1em;
-  font-family: "Montserrat", sans-serif;
-  color: #2e2e31;
-  cursor: pointer;
-}
+
 .proyectos {
   width: 100%;
 }
@@ -321,7 +350,7 @@ footer {
 }
 .footer-social {
   display: flex;
-  margin: 30px 0;
+  margin: 0;
 }
 .footer-social-icon {
   width: 60px;
@@ -338,4 +367,58 @@ footer {
 .fab,
 .fas {
   align-items: center;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  header {
+    padding: 0 20px;
+  }
+  .menu-contenedor {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .columna {
+    max-width: 100%;
+  }
+  nav {
+    display: none;
+  }
+
+  .menu-hamburguesa {
+    display: block;
+    font-size: 25px;
+    margin: 15px;
+  }
+  .section {
+    padding: 80px 20px;
+  }
+  .contenedor-presentacion {
+    flex-direction: column;
+  }
+
+  .informacion {
+    align-items: center;
+    text-align: center;
+  }
+  .nombre,
+  .descripcion {
+    text-align: center;
+  }
+
+  .imagen {
+    margin-top: 30px;
+  }
+  .presentacion {
+    height: 100vh;
+  }
+  .proyecto-filtros {
+    flex-wrap: wrap;
+  }
+  .proyecto {
+    width: calc(100% / 2 - (0.75em * 2));
+    margin: 0.75em;
+  }
+  .footer-menu {
+    display: none;
+  }
 }
