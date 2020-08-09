@@ -1,4 +1,4 @@
-# Proyecto: `Portfolio` 🐝🐝🐝
+# Proyecto: `Portfolio` 🐝
 
 ## ⚙️ Ejercicio HTML Y CSS ⚙️
 
