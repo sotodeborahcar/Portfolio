@@ -20,24 +20,29 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
-    
   </head>
   <body>
-    
-    <!-- Header -->
+    <!-----******************------>
+    <!----------- header ---------->
     <header>
       <div class="columna menu-contenedor">
         <!-- comienzo de barra de navegacion -->
-        <nav>
-          <ul class="links-navegacion">
-            <li><a href="#presentacion">HOLA</a></li>
-            <li><a href="#conocimientos">CONOCIMIENTOS</a></li>
-            <li><a href="#proyecto">PROYECTOS</a></li>
-            <li>
+        <nav class="nav-header">
+          <ul class="nav-links">
+            <li class="link-item">
+              <a href="#presentacion" class="link">HOLA</a>
+            </li>
+            <li class="link-item">
+              <a href="#conocimientos" class="link">CONOCIMIENTOS</a>
+            </li>
+            <li class="link-item">
+              <a href="#proyecto" class="link">PROYECTOS</a>
+            </li>
+            <li class="link-item" class="link">
               <a
                 href="https://www.linkedin.com/in/deborah-carolina-soto-140987/"
                 target="_blanck"
-                class="nav-link selected"
+                class="link-boton selected"
               >
                 CONTACTO</a
               >
@@ -49,12 +54,16 @@
         </button>
       </div>
     </header>
+    <!-----******************------>
     <!-- seccion de presentacion -->
     <section class="section presentacion" id="presentacion">
       <div class="columna contenedor-presentacion">
-        <div class="informacion">
+        <div class="caja-informacion">
           <p class="saludo">¡Hola! Soy</p>
-          <h1 class="nombre">Deborah Carolina SOTO</h1>
+          <h1 class="nombre">
+            Deborah Carolina <br />
+            SOTO
+          </h1>
           <p class="descripcion">
             Desarrolladora Front-End, estudiante de Ingenieria Industrial,
             excelelente conductora automovilista, fan de las matematicas y las
@@ -62,58 +71,62 @@
           </p>
           <a href="#proyecto" class="button">LO QUE HAGO</a>
         </div>
-        <img
-          src="imagenes/undraw_dev_focus_b9xo (1).png"
-          alt=""
-          class="imagen"
-        />
+        <div class="caja-imagen">
+          <img
+            src="imagenes/undraw_dev_focus_b9xo (1).png"
+            alt=""
+            class="imagen"
+          />
+        </div>
       </div>
     </section>
-    <!-- seccion conocimientos -->
+    <!-----*******************------>
+    <!-- seccion de conocimientos -->
     <section class="section conocimientos" id="conocimientos">
-      <div class="columna contenido">
+      <div class="columna caja-conocimientos">
         <h2>Mis conocimientos</h2>
         <p class="parrafo-conocimientos">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
           ipsam deleniti quo perspiciatis architecto.
         </p>
-        <div class="contenedor-box">
+        <div class="caja contenedor-box">
           <div class="box">
-            <i class="devicon-html5-plain colored"></i>
+            <i class="devicon-html5-plain colored box-icono"></i>
 
-            <p>HTML 5</p>
+            <p class="box-parrafo">HTML 5</p>
           </div>
           <div class="box">
-            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-css3-plain colored box-icono"></i>
 
-            <p>CSS 3</p>
+            <p class="box-parrafo">CSS 3</p>
           </div>
           <div class="box">
-            <i class="devicon-sass-original colored"></i>
+            <i class="devicon-sass-original colored box-icono"></i>
 
-            <p>Sass</p>
+            <p class="box-parrafo">Sass</p>
           </div>
           <div class="box">
-            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-javascript-plain colored box-icono"></i>
 
-            <p>JavaScript</p>
+            <p class="box-parrafo">JavaScript</p>
           </div>
           <div class="box">
-            <i class="devicon-react-original colored"></i>
+            <i class="devicon-react-original colored box-icono"></i>
 
-            <p>React</p>
+            <p class="box-parrafo">React</p>
           </div>
           <div class="box">
-            <i class="devicon-git-plain colored"></i>
+            <i class="devicon-git-plain colored box-icono"></i>
 
-            <p>GIT</p>
+            <p class="box-parrafo">GIT</p>
           </div>
         </div>
       </div>
     </section>
-    <!-- seccion cita -->
+    <!-----******************------>
+    <!------- seccion cita -------->
     <section class="section cita">
-      <div class="contenido columna">
+      <div class="columna contenido-cita">
         <i class="fas fa-quote-right quote-icon"></i>
         <p class="cita-autor">
           “Aquellos que han aprendido a caminar en el umbral de los mundos
@@ -125,32 +138,33 @@
         <h3>Ada Lovelace</h3>
       </div>
     </section>
-    <!-- seccion proyectos -->
-    <section class="section project" id="proyecto">
-      <div class="columna contenido">
+    <!-----******************------>
+    <!----- seccion proyectos ----->
+    <section class="section proyecto-caja" id="proyecto">
+      <div class="columna contenido-proyecto">
         <h2>Mis proyectos</h2>
         <div class="proyecto-filtros">
-          <button type="button" class="proyecto-filtro selected">Todos</button>
-          <button type="button" class="proyecto-filtro">HTML/CSS</button>
-          <button type="button" class="proyecto-filtro">JavaScript</button>
-          <button type="button" class="proyecto-filtro">React</button>
+          <button type="button" class="filtro selected">Todos</button>
+          <button type="button" class="filtro">HTML/CSS</button>
+          <button type="button" class="filtro">JavaScript</button>
+          <button type="button" class="filtro">React</button>
         </div>
         <!-- grilla de proyectos -->
-        <div class="grid proyectos">
+        <div class="caja proyectos">
           <a
             href="#"
             target="_blank"
             rel="noopener noreferrer"
             class="proyecto"
           >
-            <figure>
+            <div class="cajita">
               <img
                 src="imagenes/Captura de pantalla 2020-08-02 a la(s) 23.23.12.png"
                 alt=""
                 class="img-proyecto"
               />
-              <p class="nombre-proyecto">Porfolio</p>
-            </figure>
+              <p class="nombre-cajita">Porfolio</p>
+            </div>
           </a>
           <a
             href="#"
@@ -158,14 +172,14 @@
             rel="noopener noreferrer"
             class="proyecto"
           >
-            <figure>
+            <div class="cajita">
               <img
                 src="imagenes/undraw_shopping_app_flsj.png"
                 alt=""
                 class="img-proyecto"
               />
-              <p class="nombre-proyecto">Tienda</p>
-            </figure>
+              <p class="nombre-cajita">Tienda</p>
+            </div>
           </a>
           <a
             href="#"
@@ -173,14 +187,14 @@
             rel="noopener noreferrer"
             class="proyecto"
           >
-            <figure>
+            <div class="cajita">
               <img
                 src="imagenes/undraw_old_day_6x25.png"
                 alt=""
                 class="img-proyecto"
               />
-              <p class="nombre-proyecto">Juego de la memoria</p>
-            </figure>
+              <p class="nombre-cajita">Juego de la memoria</p>
+            </div>
           </a>
           <a
             href="#"
@@ -188,14 +202,14 @@
             rel="noopener noreferrer"
             class="proyecto"
           >
-            <figure>
+            <div class="cajita">
               <img
                 src="imagenes/undraw_wallet_aym5.png"
                 alt=""
                 class="img-proyecto"
               />
-              <p class="nombre-proyecto">Controlador de gastos</p>
-            </figure>
+              <p class="nombre-cajita">Controlador de gastos</p>
+            </div>
           </a>
           <a
             href="#"
@@ -203,14 +217,14 @@
             rel="noopener noreferrer"
             class="proyecto"
           >
-            <figure>
+            <div class="cajita">
               <img
                 src="imagenes/undraw_events_2p66.png"
                 alt=""
                 class="img-proyecto"
               />
-              <p class="nombre-proyecto">Administrador de reuniones</p>
-            </figure>
+              <p class="nombre-cajita">Administrador de reuniones</p>
+            </div>
           </a>
           <a
             href="#"
@@ -218,14 +232,14 @@
             rel="noopener noreferrer"
             class="proyecto"
           >
-            <figure>
+            <div class="cajita">
               <img
                 src="imagenes/undraw_to_do_list_a49b.png"
                 alt=""
                 class="img-proyecto"
               />
-              <p class="nombre-proyecto">Todo app</p>
-            </figure>
+              <p class="nombre-cajita">Todo app</p>
+            </div>
           </a>
           <a
             href="#"
@@ -233,36 +247,49 @@
             rel="noopener noreferrer"
             class="proyecto"
           >
-            <figure>
+            <div class="cajita">
               <img
                 src="imagenes/undraw_movie_night_fldd.png"
                 alt=""
                 class="img-proyecto"
               />
-              <p class="nombre-proyecto">Buscador de películas</p>
-            </figure>
+              <p class="nombre-cajita">Buscador de películas</p>
+            </div>
           </a>
         </div>
       </div>
     </section>
-    <!-- comienzo footer -->
+    <!-----******************------>
+    <!----------- footer ---------->
     <footer>
-      <!-- footer menu -->
+      <!-- footer menu de navegacion-->
       <nav class="footer-nav">
-        <ul class="footer-menu">
-          <li class="footer-menu-item"><a href="#presentacion">HOLA</a></li>
-          <li class="footer-menu-item"><a href="#conocimientos">CONOCIMIENTOS</a></li>
-          <li class="footer-menu-item"><a href="#proyecto">PROYECTOS</a></li>
-          <li class="footer-menu-item"><a href="https://www.linkedin.com/in/deborah-carolina-soto-140987/"
-            target="_blanck"">CONTACTO</a></li>
+        <ul class="footer-nav-menu">
+          <li class="menu-item">
+            <a href="#presentacion" class="menu-item-link">HOLA</a>
+          </li>
+          <li class="menu-item">
+            <a href="#conocimientos" class="menu-item-link">CONOCIMIENTOS</a>
+          </li>
+          <li class="menu-item">
+            <a href="#proyecto" class="menu-item-link">PROYECTOS</a>
+          </li>
+          <li class="menu-item">
+            <a
+              href="https://www.linkedin.com/in/deborah-carolina-soto-140987/"
+              target="_blanck"
+              class="menu-item-link"
+              >CONTACTO</a
+            >
+          </li>
         </ul>
       </nav>
-      <!-- footer iconos redes sociales -->
+      <!-- footer iconos de redes sociales -->
       <ul class="footer-social">
         <li class="footer-social-item">
           <a
             href="https://twitter.com/Debito_Car"
-            class="footer-social-link twitter-link"
+            class="social-item-link"
             target="_blanck"
           >
             <i class="fab fa-twitter footer-social-icon"> </i
@@ -271,7 +298,7 @@
         <li class="footer-social-item">
           <a
             href="https://github.com/sotodeborahcar"
-            class="footer-social-link github-link"
+            class="social-item-link"
             target="_blanck"
           >
             <i class="fab fa-github-alt footer-social-icon"></i
@@ -280,7 +307,7 @@
         <li class="footer-social-item">
           <a
             href="https://www.linkedin.com/in/deborah-carolina-soto-140987/"
-            class="footer-social-link linkedin-link"
+            class="social-item-link"
             target="_blanck"
           >
             <i class="fab fa-linkedin-in footer-social-icon"></i
@@ -289,14 +316,14 @@
         <li class="footer-social-item">
           <a
             href="https://outlook.live.com/mail/0/inbox/id/AQQkADAwATZiZmYAZC05NzY3LTk2YTEtMDACLTAwCgAQAMLXnxNeVkpAnXEGo8jZtUI%3D"
-            class="footer-social-link email-link"
+            class="social-item-link"
             target="_blanck"
           >
             <i class="fas fa-envelope footer-social-icon"></i
           ></a>
         </li>
       </ul>
-      <p>Codeado con 💪 por DEBO</p>
+      <p>Hecho con 💜 por DEBO</p>
     </footer>
   </body>
 </html>
