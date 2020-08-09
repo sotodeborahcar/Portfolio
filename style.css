@@ -19,11 +19,15 @@ body {
 * {
   box-sizing: border-box;
 }
+/* -----------> header <------------- */
 header {
-  /* background-color: rgba(199, 177, 184, 0.475); */
+  background-color: rgba(199, 177, 184, 0.475);
   padding: 25px 0;
   position: relative;
   box-shadow: 0 10px 8px 0 rgba(134, 134, 134, 0.25);
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .columna {
@@ -35,7 +39,6 @@ header {
   display: flex;
   justify-content: flex-end;
 }
-
 .nav-links {
   display: flex;
   margin: 0;
@@ -52,10 +55,6 @@ ul li {
 }
 li {
   font-weight: 500;
-  /* margin: 20px;
-  font-weight: 500;
-  font-size: 18px;
-  display: list-item; */
 }
 .link {
   line-height: 2.5;
@@ -96,10 +95,6 @@ button {
   padding: 100px 40px 120px;
   text-align: center;
 }
-.presentacion {
-  height: 750px;
-}
-
 .contenedor-presentacion {
   display: flex;
   flex-direction: row;
@@ -160,8 +155,9 @@ h2 {
 }
 .imagen {
   border-radius: 10%;
-  /* max-width: 500px; */
-  height: 450px;
+  max-width: 500px;
+  /* elimino altura porque me modifica en width:600px */
+  /* height: 450px; */
 }
 img {
   display: block;
@@ -202,7 +198,7 @@ h2 {
   box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
   border-radius: 10px;
   width: 260px;
-  height: 230px;
+  /* height: 230px; */
   margin: 10px;
 }
 .box-icono {
@@ -241,7 +237,7 @@ h3 {
   font-size: 35px;
   margin-bottom: 0;
 }
-/* seccion proyectos */
+/* ----------->seccion proyectos <------------- */
 .contenido-proyecto {
   display: flex;
   flex-direction: column;
@@ -334,25 +330,31 @@ footer {
   header {
     padding: 0 20px;
   }
+  .menu-contenedor {
+    display: flex;
+    justify-content: flex-end;
+  }
   /* seccion presentacion */
   .section {
-    padding: 60px 20px;
+    padding: 80px 10px;
   }
   .saludo {
     font-size: 25px;
     margin-bottom: 10px;
   }
   .nombre {
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 15px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .descripcion {
-    font-size: 20px;
-    margin-top: 40px;
+    font-size: 16px;
   }
   .button {
     padding: 12px 25px;
+  }
+  .imagen {
+    margin-top: 30px;
   }
 
   /* seccion conocimientos */
@@ -360,35 +362,45 @@ footer {
     font-size: 40px;
   }
   .box {
-    width: 200px;
-    height: 205px;
-    padding: 30px 30px;
+    width: 140px;
+    padding: 10px;
+    margin: 5px;
   }
   .box-parrafo {
-    font-size: 14px;
+    font-size: 16px;
   }
   /* seccion cita */
-  .quote-icon {
-    font-size: 55px;
+  .box-icono {
+    font-size: 40px;
   }
   .cita-autor {
     font-size: 20px;
+    margin: 0;
   }
   h3 {
     font-size: 30px;
   }
+
   /* seccion proyectos */
   .proyecto {
-    width: 44%;
+    width: 100%;
+  }
+  .proyecto-filtros {
+    flex-wrap: wrap;
+  }
+  .filtro {
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 2;
+    padding: 0 20px;
+  }
+  .footer-social {
+    margin-top: 10px;
   }
 }
-
 /* ------------------------------- */
 @media (max-width: 900px) {
-  .menu-contenedor {
-    display: flex;
-    justify-content: flex-end;
-  }
+  /* header */
   .nav-header {
     display: none;
   }
@@ -398,21 +410,28 @@ footer {
     margin: 15px;
     cursor: pointer;
   }
+  .menu-contenedor {
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* seccion presentacion */
+  .columna {
+    max-width: 100%;
+  }
   .contenedor-presentacion {
     flex-direction: column;
   }
   .presentacion {
-    height: 1100px;
     width: 100%;
   }
   .caja-informacion {
     align-items: center;
     text-align: center;
   }
-
   .caja-imagen {
     width: 90%;
   }
+  /* seccion foooter */
   footer {
     padding: 50px 30px;
   }
@@ -420,17 +439,12 @@ footer {
     display: none;
   }
 }
-
+/* <----------- min:600px and max:900px ------------- */
 @media (min-width: 600px) and (max-width: 900px) {
   /* seccion header */
   header {
     padding: 5px 20px;
   }
-  /* .menu-contenedor {
-    display: flex;
-    justify-content: flex-end;
-  } */
-
   /* seccion presentacion */
   .section {
     padding: 80px 20px;
@@ -438,19 +452,25 @@ footer {
   .contenedor-presentacion {
     flex-direction: column;
   }
-  /* .caja-imagen {
-    width: 60%;
-  } */
+  .caja-informacion {
+    margin-bottom: 30px;
+  }
   /* seccion proyectos */
-
   .proyecto {
     width: 45%;
     margin: 12px;
   }
+  /* seccion footer */
   footer {
     padding: 60px 20px;
   }
   .footer-nav {
     display: none;
+  }
+}
+/* <---------------min:600px-----------------> */
+@media (min-width: 600px) {
+  .imagen {
+    height: 450px;
   }
 }
