@@ -7,10 +7,25 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-chinese-wind-and-mountain-water-food-health-psd-layered-main-map-image_166068.jpg);
+  background: linear-gradient(
+      270deg,
+      rgba(234, 231, 238, 0.5),
+      rgba(211, 233, 238, 0.2)
+    ),
+    url(https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-chinese-wind-and-mountain-water-food-health-psd-layered-main-map-image_166068.jpg);
   background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+/* opacidad 😥*/
+
+/* .presentacion,
+.proyecto-caja {
+  background-color: rgba(223, 223, 223, 0.5);
+} */
+
 html,
 body {
   margin: 0;
@@ -21,7 +36,7 @@ body {
 }
 /* -----------> header <------------- */
 header {
-  background-color: rgba(199, 177, 184, 0.475);
+  background-color: rgba(206, 158, 174, 0.475);
   padding: 25px 0;
   position: relative;
   box-shadow: 0 10px 8px 0 rgba(134, 134, 134, 0.25);
@@ -258,7 +273,7 @@ h3 {
   width: 100%;
 }
 .proyecto {
-  width: 300px;
+  width: 30%;
   margin: 12px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
@@ -473,4 +488,65 @@ footer {
   .imagen {
     height: 450px;
   }
+}
+
+/* --------------->index-contacto <---------------- */
+
+.body-contacto {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+.contenedor-contacto {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 50px;
+  width: 600px;
+}
+.contacto-formulario {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  background-color: rgba(206, 158, 174, 0.5);
+  /* background: linear-gradient(270deg, #73f0ee8e, rgba(244, 244, 141, 0.667)); */
+  padding: 30px;
+  box-shadow: 0 10px 8px 0 rgba(145, 41, 119, 0.31);
+}
+.titulo-contacto {
+  font-family: "Lobster", cursive;
+  margin: auto;
+  color: #541d3e;
+  font-weight: 800;
+  padding: 5px;
+  letter-spacing: 10px;
+}
+label {
+  font-weight: 900;
+}
+input,
+textarea {
+  font-size: 18px;
+  width: 100%;
+  border: 2px solid #5d6271;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.submit {
+  display: flex;
+  justify-content: flex-end;
+}
+input[type="submit"] {
+  background-color: #ff638a;
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
+  border: 1px solid black;
+  cursor: pointer;
 }
