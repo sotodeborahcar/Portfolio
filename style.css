@@ -13,7 +13,8 @@ body {
       rgba(211, 233, 238, 0.2)
     ),
     url(https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-chinese-wind-and-mountain-water-food-health-psd-layered-main-map-image_166068.jpg);
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
+  background-attachment: scroll;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
