@@ -361,6 +361,12 @@ footer {
 /* ¡¡¡¡¡¡¡¡ MEDIAS QUERIES !!!!!!! */
 /* ----------------------------- */
 @media (max-width: 600px) {
+  /* agrego estos estilos para que se vea mejor en cel-iphone */
+  body {
+    background-attachment: scroll;
+    background-repeat: repeat;
+  }
+
   /* header */
   header {
     padding: 0 20px;
