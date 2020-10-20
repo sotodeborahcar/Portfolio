@@ -25,10 +25,10 @@
     <!-----******************------>
     <!----------- header ---------->
     <header>
-      <div class="columna menu-contenedor">
+      <div class="columna menu-contenedor fixed-top" id="mainNav">
         <!-- comienzo de barra de navegacion -->
-        <nav class="nav-header">
-          <ul class="nav-links">
+        <nav class="nav-header nav-collapse" id="navResponsive">
+          <ul class="nav-links nav-column">
             <li class="link-item">
               <a href="#presentacion" class="link">HOLA</a>
             </li>
@@ -62,9 +62,8 @@
           <p class="saludo">¡Hola! Soy</p>
           <h1 class="nombre">Deborah Carolina SOTO</h1>
           <p class="descripcion">
-            Desarrolladora Front-End, estudiante de Ingenieria Industrial,
-            excelelente conductora automovilista, fan de las matematicas y las
-            series.
+            Desarrolladora Front-End, estudiante de Ingenieria Industrial,,
+            ademas de ser fan de las matematicas y las series.
           </p>
           <a href="#proyecto" class="button selected">LO QUE HAGO</a>
         </div>
@@ -141,14 +140,27 @@
       <div class="columna contenido-proyecto">
         <h2>Mis proyectos</h2>
         <div class="proyecto-filtros">
-          <button type="button" class="filtro selected">Todos</button>
-          <button type="button" class="filtro">HTML/CSS</button>
-          <button type="button" class="filtro">JavaScript</button>
-          <button type="button" class="filtro">React</button>
+          <button
+            type="button"
+            data-conocimientos="Todos"
+            class="filtro selected"
+          >
+            Todos
+          </button>
+          <button type="button" data-conocimientos="HTML/CSS" class="filtro">
+            HTML/CSS
+          </button>
+          <button type="button" data-conocimientos="JavaScript" class="filtro">
+            JavaScript
+          </button>
+          <button type="button" data-conocimientos="React" class="filtro">
+            React
+          </button>
         </div>
         <!-- grilla de proyectos -->
         <div class="caja proyectos">
           <a
+            data-conocimientos="HTML/CSS"
             href="#"
             target="_blank"
             rel="noopener noreferrer"
@@ -164,6 +176,7 @@
             </div>
           </a>
           <a
+            data-conocimientos="JavaScript"
             href="#"
             target="_blank"
             rel="noopener noreferrer"
@@ -179,6 +192,7 @@
             </div>
           </a>
           <a
+            data-conocimientos="JavaScript"
             href="#"
             target="_blank"
             rel="noopener noreferrer"
@@ -190,10 +204,11 @@
                 alt=""
                 class="img-proyecto"
               />
-              <p class="nombre-cajita">Juego de la memoria</p>
+              <p class="nombre-cajita">Match 3</p>
             </div>
           </a>
           <a
+            data-conocimientos="JavaScript"
             href="#"
             target="_blank"
             rel="noopener noreferrer"
@@ -209,6 +224,7 @@
             </div>
           </a>
           <a
+            data-conocimientos="React"
             href="#"
             target="_blank"
             rel="noopener noreferrer"
@@ -224,6 +240,7 @@
             </div>
           </a>
           <a
+            data-conocimientos="React"
             href="#"
             target="_blank"
             rel="noopener noreferrer"
@@ -239,6 +256,7 @@
             </div>
           </a>
           <a
+            data-conocimientos="React"
             href="#"
             target="_blank"
             rel="noopener noreferrer"
@@ -322,5 +340,6 @@
       </ul>
       <p>Hecho con 💜 por DEBO</p>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
