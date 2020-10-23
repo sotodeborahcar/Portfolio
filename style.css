@@ -6,12 +6,12 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  background: linear-gradient(
+  /* background: linear-gradient(
       270deg,
       rgba(234, 231, 238, 0.5),
       rgba(211, 233, 238, 0.2)
     ),
-    url(https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-chinese-wind-and-mountain-water-food-health-psd-layered-main-map-image_166068.jpg);
+    url(https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-chinese-wind-and-mountain-water-food-health-psd-layered-main-map-image_166068.jpg); */
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -300,6 +300,74 @@ h3 {
   display: none;
 }
 
+/* ----------->seccion contacto <------------- */
+.contacto-section {
+  background-color: #f9f6fb;
+}
+.contacto {
+  display: flex;
+  text-align: left;
+  background-color: white;
+  padding: 80px 60px;
+  border-radius: 15px;
+  border: 1px solid #91396e;
+}
+.contacto-column {
+  width: 50%;
+  padding: 15px;
+}
+.contacto-descripcion {
+  max-width: 400px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+.contacto-links {
+  transition: 0.2s;
+}
+.contacto-social {
+  display: flex;
+}
+.contacto-social-link {
+  display: flex;
+  align-items: center;
+}
+.contacto-social-link:hover {
+  color: #ff638a;
+}
+input:focus, textarea:
+
+label {
+  font-weight: 900;
+}
+input,
+textarea {
+  font-size: 18px;
+  width: 100%;
+  border: 2px solid #5d6271;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.submit {
+  display: flex;
+  justify-content: flex-end;
+}
+input[type="submit"] {
+  background-color: #ff638a;
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
+  border: 1px solid black;
+  cursor: pointer;
+}
+::placeholder {
+  color: #541d3e;
+  font-family: sans-serif;
+}
+
 /* ----------->footer <------------- */
 
 footer {
@@ -505,70 +573,6 @@ footer {
   .imagen {
     height: 450px;
   }
-}
-
-/* --------------->index-contacto <---------------- */
-.body-contacto {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  font-size: 18px;
-}
-.contenedor-contacto {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-  margin: 50px;
-  width: 600px;
-}
-.contacto-formulario {
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 10px;
-  background-color: rgba(206, 158, 174, 0.5);
-  /* background: linear-gradient(270deg, #73f0ee8e, rgba(244, 244, 141, 0.667)); */
-  padding: 30px;
-  box-shadow: 0 10px 8px 0 rgba(145, 41, 119, 0.31);
-}
-.titulo-contacto {
-  font-family: "Lobster", cursive;
-  margin: auto;
-  color: #541d3e;
-  font-weight: 800;
-  padding: 5px;
-  letter-spacing: 10px;
-}
-label {
-  font-weight: 900;
-}
-input,
-textarea {
-  font-size: 18px;
-  width: 100%;
-  border: 2px solid #5d6271;
-  border-radius: 10px;
-  padding: 10px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.submit {
-  display: flex;
-  justify-content: flex-end;
-}
-input[type="submit"] {
-  background-color: #ff638a;
-  color: white;
-  font-weight: bold;
-  width: 200px;
-  height: 50px;
-  box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
-  border: 1px solid black;
-  cursor: pointer;
-}
-::placeholder {
-  color: #541d3e;
-  font-family: sans-serif;
 }
 
 /* modifico el menu hamburguesa para que se despliegue */
