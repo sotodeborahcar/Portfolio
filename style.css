@@ -28,9 +28,7 @@ body {
 }
 /* -----------> header <------------- */
 header {
-  /* background-color: rgba(206, 158, 174, 0.475); */
   padding: 25px 0;
-  /* box-shadow: 0 10px 8px 0 rgba(134, 134, 134, 0.25); */
   display: flex;
   justify-content: center;
 }
@@ -39,6 +37,28 @@ header {
   width: 100%;
   max-width: 1100px;
 }
+/* modifico el menu hamburguesa para que se despliegue */
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+  background-color: rgba(206, 158, 174, 0.475);
+  box-shadow: 0 10px 8px 0 rgba(134, 134, 134, 0.25);
+  max-width: 100%;
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+.nav-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
 /* ------->seccion de navegacion <--------*/
 .nav-header {
   display: flex;
@@ -106,6 +126,11 @@ button {
   color: #2e2e31;
   cursor: pointer;
 }
+button:focus {
+  outline: none;
+  border-radius: 20px;
+}
+
 .fas .fa-bars {
   font-weight: 900;
 }
@@ -271,12 +296,10 @@ h3 {
 }
 .filtro {
   line-height: 2.5;
-  margin: 8px 0;
+  margin: 8px 8px;
   padding: 0 30px;
 }
-.filtro:hover {
-  text-decoration-line: underline;
-}
+
 .proyecto {
   width: 30%;
   margin: 12px;
@@ -310,7 +333,6 @@ h3 {
   background-color: white;
   padding: 80px 60px;
   border-radius: 15px;
-  border: 1px solid #91396e;
 }
 .contacto-column {
   width: 50%;
@@ -319,7 +341,7 @@ h3 {
 .contacto-descripcion {
   max-width: 400px;
   font-family: sans-serif;
-  font-weight: lighter;
+  color: #5d6271;
 }
 .contacto-links {
   transition: 0.2s;
@@ -334,7 +356,23 @@ h3 {
 .contacto-social-link:hover {
   color: #ff638a;
 }
-input:focus, textarea:
+.input-contacto {
+  display: flex;
+}
+.input-form {
+  margin-right: 10px;
+  margin-bottom: 15px;
+  flex-grow: 1;
+  position: relative;
+}
+
+input:focus,
+textarea:focus,
+button:focus,
+a:focus {
+  box-shadow: 0px 0px 7px #ff638a;
+  outline: 0;
+}
 
 label {
   font-weight: 900;
@@ -343,11 +381,13 @@ input,
 textarea {
   font-size: 18px;
   width: 100%;
-  border: 2px solid #5d6271;
+  border: 1px solid #9ba1b0;
   border-radius: 10px;
   padding: 10px;
   margin-top: 15px;
   margin-bottom: 15px;
+  outline: none;
+  background-color: #f9f6fb;
 }
 .submit {
   display: flex;
@@ -488,13 +528,31 @@ footer {
     flex-wrap: wrap;
   }
   .filtro {
-    margin: 8px 0;
+    margin: 8px 8px;
     font-size: 14px;
     line-height: 2;
     padding: 0 20px;
   }
   .footer-social {
     margin-top: 10px;
+  }
+  /* seccion contacto */
+  .contacto {
+    padding: 20px;
+  }
+  .contacto-social {
+    display: inline;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  input,
+  textarea {
+    font-size: 14px;
+  }
+  .contacto-links {
+    display: flex;
+    flex-direction: column;
   }
 }
 /* ------------------------------- */
@@ -506,8 +564,8 @@ footer {
   }
   .menu-hamburguesa {
     display: block;
-    font-size: 25px;
-    margin: 15px;
+    font-size: 22px;
+    margin: 10px;
     cursor: pointer;
   }
   .menu-contenedor {
@@ -532,6 +590,39 @@ footer {
     width: 90%;
   }
   /* seccion foooter */
+  .contacto-section {
+    flex-direction: column;
+    padding: 0;
+  }
+  .contacto {
+    flex-direction: column;
+    padding: 0 40px 120px;
+    border: 0;
+  }
+  .contacto-column {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .contacto-title {
+    text-align: center;
+    font-size: 40px;
+  }
+  .contacto-descripcion {
+    max-width: 100%;
+    text-align: center;
+  }
+  .contacto-social-link {
+    font-size: 0.9em;
+  }
+  .contacto-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contacto-social {
+    width: 50%;
+  }
+
+  /* seccion foooter */
   footer {
     padding: 50px 30px;
   }
@@ -543,7 +634,11 @@ footer {
 @media (min-width: 600px) and (max-width: 900px) {
   /* seccion header */
   header {
-    padding: 5px 20px;
+    padding: 20px 0;
+  }
+  #mainNav {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
   /* seccion presentacion */
   .section {
@@ -560,6 +655,7 @@ footer {
     width: 45%;
     margin: 12px;
   }
+
   /* seccion footer */
   footer {
     padding: 60px 20px;
@@ -573,24 +669,4 @@ footer {
   .imagen {
     height: 450px;
   }
-}
-
-/* modifico el menu hamburguesa para que se despliegue */
-#mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-weight: 700;
-  background-color: rgba(206, 158, 174, 0.475);
-}
-.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1;
-}
-.nav-collapse {
-  flex-basis: 100%;
-  flex-grow: 1;
-  align-items: center;
 }
