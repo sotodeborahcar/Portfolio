@@ -64,6 +64,9 @@ header {
   display: flex;
   justify-content: flex-end;
 }
+.nav-expandido {
+  position: relative;
+}
 .nav-links {
   display: flex;
   margin: 0;
@@ -456,6 +459,31 @@ footer {
   color: rgb(250, 250, 250);
 }
 
+/* .ocultar {
+  transform: translateX(0);
+  width: 50vw;
+  height: 100vh;
+  top: 0;
+} */
+.nav-expandido {
+  background: #ff638aa7;
+  position: fixed;
+  transition: 0.2s;
+  transform: translateX(0px);
+  top: 0;
+  height: 100vh;
+  padding: 10px;
+}
+.lista-expandida > a {
+  padding: 20px 20px;
+  color: rgb(46, 41, 41);
+  font-weight: bold;
+}
+.lista-expandida > a:hover {
+  color: #e9f2f2;
+  font-weight: bold;
+}
+
 /* ¡¡¡¡¡¡¡¡ MEDIAS QUERIES !!!!!!! */
 /* ----------------------------- */
 @media (max-width: 600px) {
@@ -568,6 +596,7 @@ footer {
     margin: 10px;
     cursor: pointer;
   }
+
   .menu-contenedor {
     display: flex;
     justify-content: flex-end;

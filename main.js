@@ -19,3 +19,24 @@ for (let boton of botonesFiltro) {
     }
   };
 }
+
+// menu hamburguesa desplegable:
+
+const menuHamburguesa = document.querySelector(".menu-hamburguesa");
+const body = document.querySelector("#contenedor-expandido");
+const botonCerrarExpandido = document.querySelector(".boton-cerrar-expandido");
+const lis = document.querySelectorAll(".lista-expandida");
+
+menuHamburguesa.onclick = () => {
+  body.classList.toggle("hidden");
+};
+
+for (let li of lis) {
+  li.onclick = () => {
+    menuHamburguesa.onclick();
+  };
+}
+
+botonCerrarExpandido.onclick = () => {
+  body.classList.toggle("hidden");
+};
