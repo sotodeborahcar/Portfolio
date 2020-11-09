@@ -459,16 +459,16 @@ footer {
   color: rgb(250, 250, 250);
 }
 
-/* .ocultar {
+.ocultar {
   transform: translateX(0);
   width: 50vw;
   height: 100vh;
   top: 0;
-} */
+}
 .nav-expandido {
   background: #ff638aa7;
   position: fixed;
-  transition: 0.2s;
+  transition: 0.3s;
   transform: translateX(0px);
   top: 0;
   height: 100vh;
