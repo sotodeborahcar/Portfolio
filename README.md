@@ -12,7 +12,7 @@ _Es una introducción personal y presentación de los proyectos que voy realizan
 
 ### 📰 El enlace del proyecto es:
 
-[Link a Proyecto en linea](https://sotodeborahcar.github.io/Proyecto/)
+[Link a Proyecto en linea](https://sotodeborahcar.github.io/Portfolio/) 
 
 ---
 
