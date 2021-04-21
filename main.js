@@ -28,7 +28,7 @@ const botonCerrarExpandido = document.querySelector(".boton-cerrar-expandido");
 const lis = document.querySelectorAll(".lista-expandida");
 
 menuHamburguesa.onclick = () => {
-  body.classList.toggle("hidden");
+  body.classList.toggle("ocultar");
 };
 
 for (let li of lis) {
@@ -38,5 +38,5 @@ for (let li of lis) {
 }
 
 botonCerrarExpandido.onclick = () => {
-  body.classList.toggle("hidden");
+  body.classList.toggle("ocultar");
 };

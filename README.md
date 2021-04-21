@@ -1,4 +1,4 @@
-# Proyecto: `Portfolio` 🐝
+# Proyecto: `Portfolio` <img src="https://media.giphy.com/media/TeJVozbf8z7VpWm4ju/giphy.gif" width="100">
 
 ## ⚙️ Ejercicio HTML Y CSS ⚙️
 
@@ -12,7 +12,7 @@ _Es una introducción personal y presentación de los proyectos que voy realizan
 
 ### 📰 El enlace del proyecto es:
 
-[Link a Proyecto en linea](https://sotodeborahcar.github.io/Portfolio/) 
+[Link a Proyecto](https://sotodeborahcar.github.io/Portfolio/)
 
 ---
 

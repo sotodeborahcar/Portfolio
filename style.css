@@ -6,12 +6,12 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  /* background: linear-gradient(
+  background: linear-gradient(
       270deg,
-      rgba(234, 231, 238, 0.5),
-      rgba(211, 233, 238, 0.2)
+      rgba(238, 234, 244, 0.673),
+      rgba(229, 238, 240, 0.838)
     ),
-    url(https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-chinese-wind-and-mountain-water-food-health-psd-layered-main-map-image_166068.jpg); */
+    url(https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-chinese-wind-and-mountain-water-food-health-psd-layered-main-map-image_166068.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -37,7 +37,7 @@ header {
   width: 100%;
   max-width: 1100px;
 }
-/* modifico el menu hamburguesa para que se despliegue */
+/*  menu hamburguesa  */
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -64,9 +64,7 @@ header {
   display: flex;
   justify-content: flex-end;
 }
-.nav-expandido {
-  position: relative;
-}
+
 .nav-links {
   display: flex;
   margin: 0;
@@ -82,7 +80,6 @@ ul li {
   margin: 0 15px;
 }
 .link-item:hover {
-  /* text-decoration-line: underline; */
   font-weight: bold;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -202,8 +199,6 @@ h2 {
 .imagen {
   border-radius: 10%;
   max-width: 500px;
-  /* elimino altura porque me modifica en width:600px */
-  /* height: 450px; */
 }
 img {
   width: 100%;
@@ -243,7 +238,6 @@ h2 {
   box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
   border-radius: 10px;
   width: 260px;
-  /* height: 230px; */
   margin: 10px;
 }
 .box-icono {
@@ -310,11 +304,17 @@ h3 {
   border-radius: 8px;
   padding: 20px;
   overflow: hidden;
+  background: #f9f6fb;
+}
+.proyecto:hover {
+  box-shadow: 0 0px 10px 0 rgb(92 127 224 / 52%),
+    0 6px 10px 0 rgb(146 144 144 / 20%);
 }
 .cajita {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
   height: 100%;
   margin: 0;
 }
@@ -460,16 +460,19 @@ footer {
 }
 
 .ocultar {
-  transform: translateX(0);
-  width: 50vw;
+  transform: translateX(0) !important ;
+  width: 70vw;
   height: 100vh;
   top: 0;
+}
+.hidden {
+  display: none;
 }
 .nav-expandido {
   background: #ff638aa7;
   position: fixed;
   transition: 0.3s;
-  transform: translateX(0px);
+  transform: translateX(-500px);
   top: 0;
   height: 100vh;
   padding: 10px;
@@ -501,6 +504,7 @@ footer {
     display: flex;
     justify-content: flex-end;
   }
+
   /* seccion presentacion */
   .section {
     padding: 80px 10px;
@@ -596,7 +600,13 @@ footer {
     margin: 10px;
     cursor: pointer;
   }
-
+  .nav-expandido {
+    transform: translateX(4190px);
+  }
+  .ocultar {
+    transform: translateX(0) !important;
+    width: 35vw;
+  }
   .menu-contenedor {
     display: flex;
     justify-content: flex-end;
@@ -631,6 +641,7 @@ footer {
   .contacto-column {
     width: 100%;
     margin-bottom: 40px;
+    border-bottom: 1px ridge #9ba1b0;
   }
   .contacto-title {
     text-align: center;
